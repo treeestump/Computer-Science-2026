@@ -1,0 +1,781 @@
+digraph {
+	n0 [label=Module]
+	n1 [label=Import]
+	n0 -> n1
+	n2 [label=alias]
+	n1 -> n2
+	n3 [label=FunctionDef]
+	n0 -> n3
+	n4 [label=arguments]
+	n3 -> n4
+	n5 [label=arg]
+	n4 -> n5
+	n6 [label=Assign]
+	n3 -> n6
+	n7 [label=Name]
+	n6 -> n7
+	n8 [label=Store]
+	n7 -> n8
+	n9 [label=List]
+	n6 -> n9
+	n10 [label=Load]
+	n9 -> n10
+	n11 [label=For]
+	n3 -> n11
+	n12 [label=Tuple]
+	n11 -> n12
+	n13 [label=Name]
+	n12 -> n13
+	n14 [label=Store]
+	n13 -> n14
+	n15 [label=Name]
+	n12 -> n15
+	n16 [label=Store]
+	n15 -> n16
+	n17 [label=Name]
+	n12 -> n17
+	n18 [label=Store]
+	n17 -> n18
+	n19 [label=Store]
+	n12 -> n19
+	n20 [label=Call]
+	n11 -> n20
+	n21 [label=Attribute]
+	n20 -> n21
+	n22 [label=Name]
+	n21 -> n22
+	n23 [label=Load]
+	n22 -> n23
+	n24 [label=Load]
+	n21 -> n24
+	n25 [label=Name]
+	n20 -> n25
+	n26 [label=Load]
+	n25 -> n26
+	n27 [label=For]
+	n11 -> n27
+	n28 [label=Name]
+	n27 -> n28
+	n29 [label=Store]
+	n28 -> n29
+	n30 [label=Name]
+	n27 -> n30
+	n31 [label=Load]
+	n30 -> n31
+	n32 [label=If]
+	n27 -> n32
+	n33 [label=Call]
+	n32 -> n33
+	n34 [label=Attribute]
+	n33 -> n34
+	n35 [label=Name]
+	n34 -> n35
+	n36 [label=Load]
+	n35 -> n36
+	n37 [label=Load]
+	n34 -> n37
+	n38 [label=Constant]
+	n33 -> n38
+	n39 [label=Expr]
+	n32 -> n39
+	n40 [label=Call]
+	n39 -> n40
+	n41 [label=Attribute]
+	n40 -> n41
+	n42 [label=Name]
+	n41 -> n42
+	n43 [label=Load]
+	n42 -> n43
+	n44 [label=Load]
+	n41 -> n44
+	n45 [label=Call]
+	n40 -> n45
+	n46 [label=Attribute]
+	n45 -> n46
+	n47 [label=Attribute]
+	n46 -> n47
+	n48 [label=Name]
+	n47 -> n48
+	n49 [label=Load]
+	n48 -> n49
+	n50 [label=Load]
+	n47 -> n50
+	n51 [label=Load]
+	n46 -> n51
+	n52 [label=Name]
+	n45 -> n52
+	n53 [label=Load]
+	n52 -> n53
+	n54 [label=Name]
+	n45 -> n54
+	n55 [label=Load]
+	n54 -> n55
+	n56 [label=Return]
+	n3 -> n56
+	n57 [label=Name]
+	n56 -> n57
+	n58 [label=Load]
+	n57 -> n58
+	n59 [label=Import]
+	n0 -> n59
+	n60 [label=alias]
+	n59 -> n60
+	n61 [label=FunctionDef]
+	n0 -> n61
+	n62 [label=arguments]
+	n61 -> n62
+	n63 [label=arg]
+	n62 -> n63
+	n64 [label=With]
+	n61 -> n64
+	n65 [label=withitem]
+	n64 -> n65
+	n66 [label=Call]
+	n65 -> n66
+	n67 [label=Name]
+	n66 -> n67
+	n68 [label=Load]
+	n67 -> n68
+	n69 [label=Name]
+	n66 -> n69
+	n70 [label=Load]
+	n69 -> n70
+	n71 [label=Constant]
+	n66 -> n71
+	n72 [label=Name]
+	n65 -> n72
+	n73 [label=Store]
+	n72 -> n73
+	n74 [label=Assign]
+	n64 -> n74
+	n75 [label=Name]
+	n74 -> n75
+	n76 [label=Store]
+	n75 -> n76
+	n77 [label=Call]
+	n74 -> n77
+	n78 [label=Attribute]
+	n77 -> n78
+	n79 [label=Name]
+	n78 -> n79
+	n80 [label=Load]
+	n79 -> n80
+	n81 [label=Load]
+	n78 -> n81
+	n82 [label=Return]
+	n61 -> n82
+	n83 [label=Call]
+	n82 -> n83
+	n84 [label=Attribute]
+	n83 -> n84
+	n85 [label=Name]
+	n84 -> n85
+	n86 [label=Load]
+	n85 -> n86
+	n87 [label=Load]
+	n84 -> n87
+	n88 [label=Name]
+	n83 -> n88
+	n89 [label=Load]
+	n88 -> n89
+	n90 [label=ImportFrom]
+	n0 -> n90
+	n91 [label=alias]
+	n90 -> n91
+	n92 [label=FunctionDef]
+	n0 -> n92
+	n93 [label=arguments]
+	n92 -> n93
+	n94 [label=arg]
+	n93 -> n94
+	n95 [label=arg]
+	n93 -> n95
+	n96 [label=Constant]
+	n93 -> n96
+	n97 [label=Assign]
+	n92 -> n97
+	n98 [label=Name]
+	n97 -> n98
+	n99 [label=Store]
+	n98 -> n99
+	n100 [label=Call]
+	n97 -> n100
+	n101 [label=Name]
+	n100 -> n101
+	n102 [label=Load]
+	n101 -> n102
+	n103 [label=Assign]
+	n92 -> n103
+	n104 [label=Name]
+	n103 -> n104
+	n105 [label=Store]
+	n104 -> n105
+	n106 [label=Constant]
+	n103 -> n106
+	n107 [label=FunctionDef]
+	n92 -> n107
+	n108 [label=arguments]
+	n107 -> n108
+	n109 [label=arg]
+	n108 -> n109
+	n110 [label=Nonlocal]
+	n107 -> n110
+	n111 [label=Assign]
+	n107 -> n111
+	n112 [label=Name]
+	n111 -> n112
+	n113 [label=Store]
+	n112 -> n113
+	n114 [label=JoinedStr]
+	n111 -> n114
+	n115 [label=Constant]
+	n114 -> n115
+	n116 [label=FormattedValue]
+	n114 -> n116
+	n117 [label=Name]
+	n116 -> n117
+	n118 [label=Load]
+	n117 -> n118
+	n119 [label=Expr]
+	n107 -> n119
+	n120 [label=Call]
+	n119 -> n120
+	n121 [label=Attribute]
+	n120 -> n121
+	n122 [label=Name]
+	n121 -> n122
+	n123 [label=Load]
+	n122 -> n123
+	n124 [label=Load]
+	n121 -> n124
+	n125 [label=Name]
+	n120 -> n125
+	n126 [label=Load]
+	n125 -> n126
+	n127 [label=Name]
+	n120 -> n127
+	n128 [label=Load]
+	n127 -> n128
+	n129 [label=AugAssign]
+	n107 -> n129
+	n130 [label=Name]
+	n129 -> n130
+	n131 [label=Store]
+	n130 -> n131
+	n132 [label=Add]
+	n129 -> n132
+	n133 [label=Constant]
+	n129 -> n133
+	n134 [label=Return]
+	n107 -> n134
+	n135 [label=Name]
+	n134 -> n135
+	n136 [label=Load]
+	n135 -> n136
+	n137 [label=FunctionDef]
+	n92 -> n137
+	n138 [label=arguments]
+	n137 -> n138
+	n139 [label=arg]
+	n138 -> n139
+	n140 [label=arg]
+	n138 -> n140
+	n141 [label=Constant]
+	n138 -> n141
+	n142 [label=Assign]
+	n137 -> n142
+	n143 [label=Name]
+	n142 -> n143
+	n144 [label=Store]
+	n143 -> n144
+	n145 [label=Attribute]
+	n142 -> n145
+	n146 [label=Call]
+	n145 -> n146
+	n147 [label=Name]
+	n146 -> n147
+	n148 [label=Load]
+	n147 -> n148
+	n149 [label=Name]
+	n146 -> n149
+	n150 [label=Load]
+	n149 -> n150
+	n151 [label=Load]
+	n145 -> n151
+	n152 [label=Assign]
+	n137 -> n152
+	n153 [label=Name]
+	n152 -> n153
+	n154 [label=Store]
+	n153 -> n154
+	n155 [label=Call]
+	n152 -> n155
+	n156 [label=Name]
+	n155 -> n156
+	n157 [label=Load]
+	n156 -> n157
+	n158 [label=Name]
+	n155 -> n158
+	n159 [label=Load]
+	n158 -> n159
+	n160 [label=If]
+	n137 -> n160
+	n161 [label=Name]
+	n160 -> n161
+	n162 [label=Load]
+	n161 -> n162
+	n163 [label=Expr]
+	n160 -> n163
+	n164 [label=Call]
+	n163 -> n164
+	n165 [label=Attribute]
+	n164 -> n165
+	n166 [label=Name]
+	n165 -> n166
+	n167 [label=Load]
+	n166 -> n167
+	n168 [label=Load]
+	n165 -> n168
+	n169 [label=Name]
+	n164 -> n169
+	n170 [label=Load]
+	n169 -> n170
+	n171 [label=Name]
+	n164 -> n171
+	n172 [label=Load]
+	n171 -> n172
+	n173 [label=For]
+	n137 -> n173
+	n174 [label=Name]
+	n173 -> n174
+	n175 [label=Store]
+	n174 -> n175
+	n176 [label=Call]
+	n173 -> n176
+	n177 [label=Attribute]
+	n176 -> n177
+	n178 [label=Name]
+	n177 -> n178
+	n179 [label=Load]
+	n178 -> n179
+	n180 [label=Load]
+	n177 -> n180
+	n181 [label=Name]
+	n176 -> n181
+	n182 [label=Load]
+	n181 -> n182
+	n183 [label=Expr]
+	n173 -> n183
+	n184 [label=Call]
+	n183 -> n184
+	n185 [label=Name]
+	n184 -> n185
+	n186 [label=Load]
+	n185 -> n186
+	n187 [label=Name]
+	n184 -> n187
+	n188 [label=Load]
+	n187 -> n188
+	n189 [label=Name]
+	n184 -> n189
+	n190 [label=Load]
+	n189 -> n190
+	n191 [label=Expr]
+	n92 -> n191
+	n192 [label=Call]
+	n191 -> n192
+	n193 [label=Name]
+	n192 -> n193
+	n194 [label=Load]
+	n193 -> n194
+	n195 [label=Name]
+	n192 -> n195
+	n196 [label=Load]
+	n195 -> n196
+	n197 [label=Expr]
+	n92 -> n197
+	n198 [label=Call]
+	n197 -> n198
+	n199 [label=Attribute]
+	n198 -> n199
+	n200 [label=Name]
+	n199 -> n200
+	n201 [label=Load]
+	n200 -> n201
+	n202 [label=Load]
+	n199 -> n202
+	n203 [label=Name]
+	n198 -> n203
+	n204 [label=Load]
+	n203 -> n204
+	n205 [label=keyword]
+	n198 -> n205
+	n206 [label=Constant]
+	n205 -> n206
+	n207 [label=keyword]
+	n198 -> n207
+	n208 [label=Constant]
+	n207 -> n208
+	n209 [label=Import]
+	n0 -> n209
+	n210 [label=alias]
+	n209 -> n210
+	n211 [label=FunctionDef]
+	n0 -> n211
+	n212 [label=arguments]
+	n211 -> n212
+	n213 [label=arg]
+	n212 -> n213
+	n214 [label=Assign]
+	n211 -> n214
+	n215 [label=Name]
+	n214 -> n215
+	n216 [label=Store]
+	n215 -> n216
+	n217 [label=List]
+	n214 -> n217
+	n218 [label=Load]
+	n217 -> n218
+	n219 [label=Assign]
+	n211 -> n219
+	n220 [label=Name]
+	n219 -> n220
+	n221 [label=Store]
+	n220 -> n221
+	n222 [label=Dict]
+	n219 -> n222
+	n223 [label=Assign]
+	n211 -> n223
+	n224 [label=Name]
+	n223 -> n224
+	n225 [label=Store]
+	n224 -> n225
+	n226 [label=Call]
+	n223 -> n226
+	n227 [label=Attribute]
+	n226 -> n227
+	n228 [label=Name]
+	n227 -> n228
+	n229 [label=Load]
+	n228 -> n229
+	n230 [label=Load]
+	n227 -> n230
+	n231 [label=Constant]
+	n226 -> n231
+	n232 [label=For]
+	n211 -> n232
+	n233 [label=Tuple]
+	n232 -> n233
+	n234 [label=Name]
+	n233 -> n234
+	n235 [label=Store]
+	n234 -> n235
+	n236 [label=Name]
+	n233 -> n236
+	n237 [label=Store]
+	n236 -> n237
+	n238 [label=Store]
+	n233 -> n238
+	n239 [label=Call]
+	n232 -> n239
+	n240 [label=Name]
+	n239 -> n240
+	n241 [label=Load]
+	n240 -> n241
+	n242 [label=Name]
+	n239 -> n242
+	n243 [label=Load]
+	n242 -> n243
+	n244 [label=keyword]
+	n239 -> n244
+	n245 [label=Constant]
+	n244 -> n245
+	n246 [label=Try]
+	n232 -> n246
+	n247 [label=Expr]
+	n246 -> n247
+	n248 [label=Call]
+	n247 -> n248
+	n249 [label=Name]
+	n248 -> n249
+	n250 [label=Load]
+	n249 -> n250
+	n251 [label=Name]
+	n248 -> n251
+	n252 [label=Load]
+	n251 -> n252
+	n253 [label=Dict]
+	n248 -> n253
+	n254 [label=Name]
+	n248 -> n254
+	n255 [label=Load]
+	n254 -> n255
+	n256 [label=ExceptHandler]
+	n246 -> n256
+	n257 [label=Pass]
+	n256 -> n257
+	n258 [label=Expr]
+	n232 -> n258
+	n259 [label=Call]
+	n258 -> n259
+	n260 [label=Attribute]
+	n259 -> n260
+	n261 [label=Name]
+	n260 -> n261
+	n262 [label=Load]
+	n261 -> n262
+	n263 [label=Load]
+	n260 -> n263
+	n264 [label=Dict]
+	n259 -> n264
+	n265 [label=Constant]
+	n264 -> n265
+	n266 [label=Constant]
+	n264 -> n266
+	n267 [label=Constant]
+	n264 -> n267
+	n268 [label=Name]
+	n264 -> n268
+	n269 [label=Load]
+	n268 -> n269
+	n270 [label=Call]
+	n264 -> n270
+	n271 [label=Attribute]
+	n270 -> n271
+	n272 [label=Name]
+	n271 -> n272
+	n273 [label=Load]
+	n272 -> n273
+	n274 [label=Load]
+	n271 -> n274
+	n275 [label=Call]
+	n264 -> n275
+	n276 [label=Attribute]
+	n275 -> n276
+	n277 [label=Name]
+	n276 -> n277
+	n278 [label=Load]
+	n277 -> n278
+	n279 [label=Load]
+	n276 -> n279
+	n280 [label=Return]
+	n211 -> n280
+	n281 [label=Call]
+	n280 -> n281
+	n282 [label=Attribute]
+	n281 -> n282
+	n283 [label=Name]
+	n282 -> n283
+	n284 [label=Load]
+	n283 -> n284
+	n285 [label=Load]
+	n282 -> n285
+	n286 [label=Name]
+	n281 -> n286
+	n287 [label=Load]
+	n286 -> n287
+	n288 [label=FunctionDef]
+	n0 -> n288
+	n289 [label=arguments]
+	n288 -> n289
+	n290 [label=arg]
+	n289 -> n290
+	n291 [label=Assign]
+	n288 -> n291
+	n292 [label=Name]
+	n291 -> n292
+	n293 [label=Store]
+	n292 -> n293
+	n294 [label=Call]
+	n291 -> n294
+	n295 [label=Name]
+	n294 -> n295
+	n296 [label=Load]
+	n295 -> n296
+	n297 [label=Name]
+	n294 -> n297
+	n298 [label=Load]
+	n297 -> n298
+	n299 [label=For]
+	n288 -> n299
+	n300 [label=Name]
+	n299 -> n300
+	n301 [label=Store]
+	n300 -> n301
+	n302 [label=Name]
+	n299 -> n302
+	n303 [label=Load]
+	n302 -> n303
+	n304 [label=Expr]
+	n299 -> n304
+	n305 [label=Call]
+	n304 -> n305
+	n306 [label=Name]
+	n305 -> n306
+	n307 [label=Load]
+	n306 -> n307
+	n308 [label=JoinedStr]
+	n305 -> n308
+	n309 [label=Constant]
+	n308 -> n309
+	n310 [label=FormattedValue]
+	n308 -> n310
+	n311 [label=Name]
+	n310 -> n311
+	n312 [label=Load]
+	n311 -> n312
+	n313 [label=Assign]
+	n299 -> n313
+	n314 [label=Name]
+	n313 -> n314
+	n315 [label=Store]
+	n314 -> n315
+	n316 [label=Call]
+	n313 -> n316
+	n317 [label=Name]
+	n316 -> n317
+	n318 [label=Load]
+	n317 -> n318
+	n319 [label=Name]
+	n316 -> n319
+	n320 [label=Load]
+	n319 -> n320
+	n321 [label=Expr]
+	n299 -> n321
+	n322 [label=Call]
+	n321 -> n322
+	n323 [label=Name]
+	n322 -> n323
+	n324 [label=Load]
+	n323 -> n324
+	n325 [label=Name]
+	n322 -> n325
+	n326 [label=Load]
+	n325 -> n326
+	n327 [label=keyword]
+	n322 -> n327
+	n328 [label=BinOp]
+	n327 -> n328
+	n329 [label=Name]
+	n328 -> n329
+	n330 [label=Load]
+	n329 -> n330
+	n331 [label=Add]
+	n328 -> n331
+	n332 [label=Constant]
+	n328 -> n332
+	n333 [label=With]
+	n299 -> n333
+	n334 [label=withitem]
+	n333 -> n334
+	n335 [label=Call]
+	n334 -> n335
+	n336 [label=Name]
+	n335 -> n336
+	n337 [label=Load]
+	n336 -> n337
+	n338 [label=Name]
+	n335 -> n338
+	n339 [label=Load]
+	n338 -> n339
+	n340 [label=Name]
+	n334 -> n340
+	n341 [label=Store]
+	n340 -> n341
+	n342 [label=Assign]
+	n333 -> n342
+	n343 [label=Name]
+	n342 -> n343
+	n344 [label=Store]
+	n343 -> n344
+	n345 [label=Call]
+	n342 -> n345
+	n346 [label=Attribute]
+	n345 -> n346
+	n347 [label=Name]
+	n346 -> n347
+	n348 [label=Load]
+	n347 -> n348
+	n349 [label=Load]
+	n346 -> n349
+	n350 [label=Assign]
+	n299 -> n350
+	n351 [label=Name]
+	n350 -> n351
+	n352 [label=Store]
+	n351 -> n352
+	n353 [label=Call]
+	n350 -> n353
+	n354 [label=Name]
+	n353 -> n354
+	n355 [label=Load]
+	n354 -> n355
+	n356 [label=Name]
+	n353 -> n356
+	n357 [label=Load]
+	n356 -> n357
+	n358 [label=Expr]
+	n299 -> n358
+	n359 [label=Call]
+	n358 -> n359
+	n360 [label=Attribute]
+	n359 -> n360
+	n361 [label=Name]
+	n360 -> n361
+	n362 [label=Load]
+	n361 -> n362
+	n363 [label=Load]
+	n360 -> n363
+	n364 [label=BinOp]
+	n359 -> n364
+	n365 [label=Name]
+	n364 -> n365
+	n366 [label=Load]
+	n365 -> n366
+	n367 [label=Add]
+	n364 -> n367
+	n368 [label=Constant]
+	n364 -> n368
+	n369 [label=keyword]
+	n359 -> n369
+	n370 [label=Constant]
+	n369 -> n370
+	n371 [label=Assign]
+	n0 -> n371
+	n372 [label=Name]
+	n371 -> n372
+	n373 [label=Store]
+	n372 -> n373
+	n374 [label=Call]
+	n371 -> n374
+	n375 [label=Name]
+	n374 -> n375
+	n376 [label=Load]
+	n375 -> n376
+	n377 [label=Constant]
+	n374 -> n377
+	n378 [label=Expr]
+	n0 -> n378
+	n379 [label=Call]
+	n378 -> n379
+	n380 [label=Name]
+	n379 -> n380
+	n381 [label=Load]
+	n380 -> n381
+	n382 [label=Name]
+	n379 -> n382
+	n383 [label=Load]
+	n382 -> n383
+	n384 [label=Assign]
+	n0 -> n384
+	n385 [label=Name]
+	n384 -> n385
+	n386 [label=Store]
+	n385 -> n386
+	n387 [label=Call]
+	n384 -> n387
+	n388 [label=Name]
+	n387 -> n388
+	n389 [label=Load]
+	n388 -> n389
+}
