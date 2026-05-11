@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Analysis: testy.py</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 15px; line-height: 1.6;
+    background: #f8fafc; color: #1e293b; margin: 0; padding: 0;
+  }
+  .topbar {
+    background: #0f172a; color: #e2e8f0;
+    padding: 14px 32px; display: flex; align-items: center; gap: 12px;
+  }
+  .topbar .icon { font-size: 22px; }
+  .topbar h1 { font-size: 17px; font-weight: 600; margin: 0; }
+  .topbar .meta { margin-left: auto; font-size: 12px; color: #94a3b8; }
+  .container { max-width: 960px; margin: 0 auto; padding: 28px 24px 60px; }
+  .summary-box {
+    background: #fff; border: 1px solid #e2e8f0; border-radius: 10px;
+    padding: 18px 22px; margin-bottom: 28px;
+  }
+  .summary-box h2 { font-size: 13px; font-weight: 600; color: #64748b; margin: 0 0 6px; text-transform: uppercase; letter-spacing: .06em; }
+  .summary-box p { margin: 0; color: #334155; }
+  .section {
+    background: #fff; border: 1px solid #e2e8f0; border-radius: 10px;
+    overflow: hidden; margin-bottom: 24px;
+  }
+  .section-header {
+    padding: 13px 20px; background: #f1f5f9;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex; align-items: center; gap: 9px;
+  }
+  .section-header .badge {
+    font-size: 11px; font-weight: 600; padding: 3px 9px; border-radius: 20px;
+    background: #dbeafe; color: #1d4ed8;
+  }
+  .section-header h3 { margin: 0; font-size: 15px; font-weight: 600; }
+  .section-body { padding: 20px 22px; }
+  pre {
+    background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;
+    padding: 16px 18px; font-family: "JetBrains Mono", "Fira Code", monospace;
+    font-size: 13px; line-height: 1.7; overflow-x: auto; margin: 0;
+    white-space: pre-wrap; word-break: break-word;
+  }
+  .flowchart-wrap { overflow-x: auto; text-align: center; padding: 10px 0; }
+  .flowchart-wrap svg { max-width: 100%; height: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th {
+    background: #f1f5f9; text-align: left;
+    padding: 9px 13px; border: 1px solid #e2e8f0;
+    font-weight: 600; font-size: 12px; color: #475569;
+  }
+  td { padding: 8px 13px; border: 1px solid #e2e8f0; vertical-align: top; font-family: monospace; }
+  tr:nth-child(even) td { background: #f8fafc; }
+  .footer { text-align: center; font-size: 12px; color: #94a3b8; margin-top: 40px; }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <span class="icon">🐍</span>
+  <h1>testy.py</h1>
+  <span class="meta">Generated 2026-05-07 14:21</span>
+</div>
+<div class="container">
+
+  <div class="summary-box">
+    <h2>Summary</h2>
+    <p>This code simulates a parking garage ticket system. It tracks available slots, generates unique tickets with pricing based on weekday/weekend rates, writes ticket records to a file, and prints ticket information for three sample vehicles.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="badge">Flowchart</span>
+      <h3>Control flow diagram</h3>
+    </div>
+    <div class="section-body">
+      <div class="flowchart-wrap">
+        <svg width="700" height="750" xmlns="http://www.w3.org/2000/svg"><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#64748b"/></marker></defs><rect x="275" y="10" width="150" height="40" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/><text x="350" y="35" font-family="monospace" font-size="13" fill="#1e293b" text-anchor="middle">Start</text><rect x="225" y="70" width="250" height="40" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/><text x="350" y="95" font-family="monospace" font-size="13" fill="#1e293b" text-anchor="middle">Initialize global variables</text><rect x="225" y="130" width="250" height="40" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/><text x="350" y="155" font-family="monospace" font-size="13" fill="#1e293b" text-anchor="middle">Call generate_ticket()</text><rect x="225" y="190" width="250" height="40" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/><text x="350" y="215" font-family="monospace" font-size="13" fill="#1e293b" text-anchor="middle">Convert hoursText to int</text><polygon points="350,250 480,310 350,370 220,310" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/><text x="350" y="305" font-family="monospace" font-size="13" fill="#1e293b" text-anchor="middle">occupied</text><text x="350" y="320" font-family="monospace" font-size="13" fill="#1e293b" text-anchor="middle">>= totalSlots?</text><rect x="520" y="290" width="140" height="40" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/><text x="590" y="315" font-family="monospace" font-size="13" fill="#1e293b" text-anchor="middle">Return "Garage Full"</text><polygon points="350,390 460,440 350,490 240,440" fill="#fef9c3" stroke="#ca8a04" stroke-width="2"/><text x="350" y="445" font-family="monospace" font-size="13" fill="#1e293b" text-anchor="middle">isWeekend?</text><rect x="100" y="420" width="120" height="40" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/><text x="160" y="445" font-family="monospace" font-size="13" fill="#1e293b" text-anchor="middle">rate = 3.00</text><rect x="480" y="420" width="120" height="40" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/><text x="540" y="445" font-family="monospace" font-size="13" fill="#1e293b" text-anchor="middle">rate = 2.50</text><rect x="225" y="510" width="250" height="40" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/><text x="350" y="535" font-family="monospace" font-size="13" fill="#1e293b" text-anchor="middle">Calculate cost, build ticket</text><rect x="225" y="570" width="250" height="40" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/><text x="350" y="595" font-family="monospace" font-size="13" fill="#1e293b" text-anchor="middle">Write ticket to file</text><rect x="225" y="630" width="250" height="40" rx="4" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/><text x="350" y="655" font-family="monospace" font-size="13" fill="#1e293b" text-anchor="middle">occupied += 1, return ticket</text><rect x="275" y="690" width="150" height="40" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/><text x="350" y="715" font-family="monospace" font-size="13" fill="#1e293b" text-anchor="middle">End</text><line x1="350" y1="50" x2="350" y2="70" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/><line x1="350" y1="110" x2="350" y2="130" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/><line x1="350" y1="170" x2="350" y2="190" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/><line x1="350" y1="230" x2="350" y2="250" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/><line x1="480" y1="310" x2="520" y2="310" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/><text x="490" y="300" font-family="monospace" font-size="11" fill="#1e293b">Yes</text><line x1="350" y1="370" x2="350" y2="390" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/><text x="320" y="385" font-family="monospace" font-size="11" fill="#1e293b">No</text><line x1="240" y1="440" x2="220" y2="440" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/><text x="205" y="430" font-family="monospace" font-size="11" fill="#1e293b">Yes</text><line x1="460" y1="440" x2="480" y2="440" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/><text x="465" y="430" font-family="monospace" font-size="11" fill="#1e293b">No</text><line x1="160" y1="460" x2="160" y2="535" stroke="#64748b" stroke-width="2"/><line x1="160" y1="535" x2="225" y2="535" stroke="#64748b" stroke-width="2"/><line x1="540" y1="460" x2="540" y2="535" stroke="#64748b" stroke-width="2"/><line x1="540" y1="535" x2="475" y2="535" stroke="#64748b" stroke-width="2"/><line x1="350" y1="550" x2="350" y2="570" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/><line x1="350" y1="610" x2="350" y2="630" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/><line x1="350" y1="670" x2="350" y2="690" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/></svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="badge">Trace</span>
+      <h3>Execution trace table</h3>
+    </div>
+    <div class="section-body">
+      <table><thead><tr><th>step</th><th>line</th><th>operation</th><th>totalSlots</th><th>occupied</th><th>garageCode</th><th>ratePerHour</th><th>isWeekend</th></tr></thead><tbody><tr><td>1</td><td>1-5</td><td>Initialize globals</td><td>120</td><td>0</td><td>G</td><td>2.5</td><td>False</td></tr><tr><td>2</td><td>28</td><td>Call generate_ticket("AB12CD", "2")</td><td></td><td>0</td><td></td><td></td><td></td></tr><tr><td>3</td><td>12</td><td>Convert hoursText to int</td><td></td><td>0</td><td></td><td></td><td></td></tr><tr><td>4</td><td>13</td><td>Check if garage full (0 >= 120)</td><td></td><td>0</td><td></td><td></td><td></td></tr><tr><td>5</td><td>16-19</td><td>isWeekend is False, use ratePerHour</td><td></td><td></td><td></td><td></td><td>False</td></tr><tr><td>6</td><td>20</td><td>Calculate cost</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>7</td><td>21</td><td>Build ticket string</td><td></td><td>0</td><td></td><td></td><td></td></tr><tr><td>8</td><td>22-24</td><td>Write to tickets.txt</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>9</td><td>25</td><td>Increment occupied</td><td></td><td>1</td><td></td><td></td><td></td></tr><tr><td>10</td><td>26</td><td>Return ticket info</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>11</td><td>29</td><td>Call generate_ticket("ZZ99YY", "4")</td><td></td><td>1</td><td></td><td></td><td></td></tr><tr><td>12</td><td>12</td><td>Convert hoursText to int</td><td></td><td>1</td><td></td><td></td><td></td></tr><tr><td>13</td><td>13</td><td>Check if garage full (1 >= 120)</td><td></td><td>1</td><td></td><td></td><td></td></tr><tr><td>14</td><td>16-19</td><td>isWeekend is False, use ratePerHour</td><td></td><td></td><td></td><td></td><td>False</td></tr><tr><td>15</td><td>20</td><td>Calculate cost</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>16</td><td>21</td><td>Build ticket string</td><td></td><td>1</td><td></td><td></td><td></td></tr><tr><td>17</td><td>22-24</td><td>Write to tickets.txt</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>18</td><td>25</td><td>Increment occupied</td><td></td><td>2</td><td></td><td></td><td></td></tr><tr><td>19</td><td>26</td><td>Return ticket info</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>20</td><td>30</td><td>Set isWeekend = True</td><td></td><td></td><td></td><td></td><td>True</td></tr><tr><td>21</td><td>31</td><td>Call generate_ticket("K1NG", "3")</td><td></td><td>2</td><td></td><td></td><td></td></tr><tr><td>22</td><td>12</td><td>Convert hoursText to int</td><td></td><td>2</td><td></td><td></td><td></td></tr><tr><td>23</td><td>16-17</td><td>isWeekend is True, use weekend rate</td><td></td><td></td><td></td><td></td><td>True</td></tr><tr><td>24</td><td>20-25</td><td>Calculate cost, build ticket, write, increment</td><td></td><td>3</td><td></td><td></td><td></td></tr><tr><td>25</td><td>34</td><td>Wait for user input</td><td></td><td>3</td><td></td><td></td><td></td></tr></tbody></table>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="badge">Pseudocode</span>
+      <h3>Algorithm pseudocode</h3>
+    </div>
+    <div class="section-body">
+      <pre>INITIALIZE global variables:
+    totalSlots = 120
+    occupied = 0
+    garageCode = "G"
+    ratePerHour = 2.50
+    isWeekend = False
+
+FUNCTION generate_ticket(vehicle_plate, hoursText):
+    Convert hoursText to integer as localHours
+    
+    IF occupied &gt;= totalSlots THEN
+        RETURN "Garage Full"
+    END IF
+    
+    IF isWeekend is True THEN
+        SET localRate = 3.00
+    ELSE
+        SET localRate = ratePerHour (2.50)
+    END IF
+    
+    CALCULATE localCost = localHours * localRate
+    
+    BUILD ticket string: garageCode + "-" + vehicle_plate + "-" + occupied
+    
+    OPEN "tickets.txt" in append mode
+    WRITE newline + ticket + ", " + localCost to file
+    CLOSE file
+    
+    INCREMENT occupied by 1
+    
+    RETURN ticket + " costs " + localCost
+END FUNCTION
+
+MAIN EXECUTION:
+    PRINT generate_ticket("AB12CD", "2")
+    PRINT generate_ticket("ZZ99YY", "4")
+    SET isWeekend = True
+    PRINT generate_ticket("K1NG", "3")
+    WAIT for user input</pre>
+    </div>
+  </div>
+
+  <div class="footer">
+    Python File Analyzer &mdash; powered by Claude &mdash; 2026-05-07 14:21
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+Hello world! This is a test.
+HELLO, hello... world?
+Python is great. Python is fun.
+Coding in Python; coding in JAVA.
+java, Java, JAVA!
+AI is changing the world.
+The world of AI is exciting.
+Test cases help improve code quality.
+Code quality matters; good code matters.
+Optimization optimization optimization.
+Bug fixes are important.
+Fixing bugs improves software.
+Software testing, testing, TESTING.
+Edge-cases should be checked.
+Numbers like 123 should be ignored?
+Mixed-case Words and mixed-case words.
+Punctuation!!! should not affect counts.
+Short words: a an the THE the.
+Repeated repeated repeated repeated.
+Single occurrence word.
+New-line handling should work correctly.
+
+apple banana apple orange banana apple
+kiwi mango kiwi kiwi mango
+dog cat DOG bird bird bird
+sun moon star sun SUN
+rain wind rain snow rain
+up down left right up
+alpha beta gamma alpha beta
+one two three four five
+data Data DATA dAtA
+email e-mail email.
+co-operate cooperate co-operate
+end. END? end!
+
+special_characters shouldn't-break parsing.
+hyphen-word hyphen-word another-word
+comma,separated,words should split properly.
+multiple     spaces should not fail.
+
+last line with unique words only once
