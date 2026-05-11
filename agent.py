@@ -15,7 +15,7 @@ Requirements:
     pip install anthropic
 
 Set your API key:
-    export ANTHROPIC_API_KEY=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
+    export ANTHROPIC_API_KEY=put in key
 """
 
 import os
@@ -308,7 +308,7 @@ def main():
         print(f"ERROR: '{folder}' is not a valid directory.")
         sys.exit(1)
 
-    api_key = "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"
+    api_key = "put api key here later"
     if not api_key:
         print("ERROR: ANTHROPIC_API_KEY environment variable not set.")
         print("  export ANTHROPIC_API_KEY=sk-ant-...")
